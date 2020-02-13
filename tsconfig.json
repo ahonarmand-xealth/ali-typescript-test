@@ -4,18 +4,19 @@
     "strictNullChecks": true,
     "sourceMap": true,
     "allowJs": true,
-    "target": "es5",
-    "outDir": ".build",
+    "target": "es2018",
+    "outDir": "lib",
     "moduleResolution": "node",
-    "lib": ["es2015"],
+    "lib": ["es2018"],
     "rootDir": "./",
     "baseUrl": ".",
     "esModuleInterop": true,
     "paths": {                                /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
-      "~/*": ["./src/*"]
+      "~": ["src"],
+      "~/*": ["src/*"]
     },
   },
   "include": [
-    "src/**/*"
+    "src"
   ]
 }
