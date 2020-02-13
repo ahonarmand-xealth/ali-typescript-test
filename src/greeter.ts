@@ -1,4 +1,4 @@
-import {x} from 'src/module1'
+import {x} from './module1'
 
 function greeter(person: string): string {
   return `${x}, ` + person;
